@@ -8,5 +8,4 @@ on:
 jobs:
   call-reusable:
     uses: ksloo1788/reusable-workflow/.github/workflows/reusable.yml@main
-    secrets:
-      SSH_KEY: ${{ secrets.SSH_KEY }} 
+    secrets: inherit
