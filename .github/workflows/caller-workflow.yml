@@ -1,0 +1,12 @@
+name: Call Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable:
+    uses: ksloo1788/reusable-workflow/.github/workflows/reusable.yml@main
+    secrets:
+      SSH_KEY: ${{ secrets.SSH_KEY }} 
